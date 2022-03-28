@@ -1,9 +1,13 @@
+@import url('https://fonts.googleapis.com/css2?family=DotGothic16&family=Roboto:wght@100&display=swap');
+
 html,
 body {
   padding: 0;
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu,
     Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  background-color: rgb(10, 12, 17);
+  color: rgb(240, 243, 246);
 }
 
 a {
@@ -13,4 +17,59 @@ a {
 
 * {
   box-sizing: border-box;
+}
+
+.react-tabs {
+  display: flex;
+}
+
+.react-tabs__tab-list {
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+  border-width: 0;
+  border-right: 1px solid white;
+  height: 100vh;
+  width: 20em;
+}
+
+.react-tabs__tab {
+  list-style: none;
+  cursor: pointer;
+  color: #bbb;
+  font-size: 2em;
+  line-height: 2em;
+}
+
+.react-tabs__tab--selected {
+  border-color: #1c1d1f;
+  color: white;
+  font-family: 'DotGothic16', sans-serif;
+}
+
+.react-tabs__tab-panel {
+  display: none;
+}
+
+.react-tabs__tab-panel--selected {
+  display: block;
+  padding: 2em;
+}
+
+.react-tabs__tab {
+  padding-left: 24px;
+}
+
+.react-tabs__tab--selected {
+  padding-left: 21px;
+}
+
+.panel-content {
+}
+
+.react-tabs__tab-panel {
+  font-family: 'DotGothic16', sans-serif;
+}
+
+.react-tabs__tab-panel--selected {
 }

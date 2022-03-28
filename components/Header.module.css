@@ -1,0 +1,9 @@
+.header {
+  background-color: rgb(39, 43, 51);
+  padding: 0.5em 0.5em;
+}
+
+.title {
+  font-weight: normal;
+  font-family: 'DotGothic16', sans-serif;
+}
