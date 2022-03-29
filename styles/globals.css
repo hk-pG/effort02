@@ -39,6 +39,7 @@ a {
   color: #bbb;
   font-size: 2em;
   line-height: 2em;
+  user-select: none;
 }
 
 .react-tabs__tab--selected {
@@ -62,6 +63,8 @@ a {
 
 .react-tabs__tab--selected {
   padding-left: 21px;
+  transform-origin: 30%;
+  animation: rotate 0.5s;
 }
 
 .panel-content {
@@ -72,4 +75,25 @@ a {
 }
 
 .react-tabs__tab-panel--selected {
+  animation: fadeIn 0.5s;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes rotate {
+  0% {
+    transform: rotate(0);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
 }

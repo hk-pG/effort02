@@ -1,6 +1,7 @@
 .header {
   background-color: rgb(39, 43, 51);
   padding: 0.5em 0.5em;
+  border-bottom: 1px solid white;
 }
 
 .title {
