@@ -27,6 +27,7 @@ a {
   display: flex;
   flex-direction: column;
   margin: 0;
+  padding: 0;
   border-width: 0;
   border-right: 1px solid white;
   height: 100vh;
@@ -34,37 +35,36 @@ a {
 }
 
 .react-tabs__tab {
+  padding-left: 1.3em;
   list-style: none;
   cursor: pointer;
   color: #bbb;
   font-size: 2em;
   line-height: 2em;
   user-select: none;
+  transition: 0.5s;
+  border: none;
 }
 
 .react-tabs__tab--selected {
-  border-color: #1c1d1f;
   color: white;
   font-family: 'DotGothic16', sans-serif;
+  transform-origin: 30%;
+}
+
+.react-tabs__tab:hover {
+  background-color: rgb(42, 121, 134);
 }
 
 .react-tabs__tab-panel {
   display: none;
+  width: 100%;
+  background-size: contain;
 }
 
 .react-tabs__tab-panel--selected {
   display: block;
   padding: 2em;
-}
-
-.react-tabs__tab {
-  padding-left: 24px;
-}
-
-.react-tabs__tab--selected {
-  padding-left: 21px;
-  transform-origin: 30%;
-  animation: rotate 0.5s;
 }
 
 .panel-content {
