@@ -22,18 +22,14 @@ const data: Data[] = [
           content={
             <p>
               このサイトは、努力の跡2022の
-              <a
+              <Link
                 href="https://hk-pg.github.io/gohanRPG/"
                 target="_blank"
                 rel="noreferrer"
-                style={{
-                  color: '#5a9bab',
-                  textDecoration: 'underline',
-                  fontSize: '1.5em',
-                }}
+                fontSize="2em"
               >
                 GohanRPG
-              </a>
+              </Link>
               制作チームのサイトです。
               <br />
               各メンバーの学籍番号をクリックすると、それぞれの感想等がみれます。
@@ -249,6 +245,20 @@ const data: Data[] = [
                         人を集めるにしても、皆努力の跡の計画を立ててしまってからでは遅いし、何より話し合いや個人の学習期間が必要になることは目に見えていたので
                         修学旅行前に声掛けをスタートしました。
                         そこで最初は学習コストの低減を重視し同じ言語を使えてRPGに興味のありそうな人達に声をかけていると、最終的に総勢5人のチームが出来上がりました。
+                      </p>
+                      <p>
+                        今回の制作では、複数人での開発ということもあり生のJavaScriptではなくTypeScriptを使い、
+                        <br />
+                        その関係上モジュールバンドラーであるWebpackを利用しました。
+                        <br />
+                        幸いにもこの学校の環境はLinux(2022/03/30現在CentOS8)なので、簡単にnode.jsの環境構築が可能です。
+                        メンバーには頑張って(大体)自力で環境構築してもらいました。
+                        <br />
+                        ソースコードは
+                        <Link href="https://github.com/hk-pG/gohanRPG" target={'_blank'}>
+                          github
+                        </Link>
+                        に公開しているので、node環境さえあれば動かせるし、改造することも可能です。
                       </p>
                     </div>
                   }
