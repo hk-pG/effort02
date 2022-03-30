@@ -1,4 +1,3 @@
-// aタグに渡せるpropsの型を定義する
 type aProps = JSX.IntrinsicElements['a'];
 
 type Props = aProps & {
@@ -8,7 +7,7 @@ type Props = aProps & {
 };
 
 const Link: React.VFC<Props> = (props: Props) => {
-  const { children, fontSize = '1em', color = '#3a8ba9', ...rest } = props;
+  const { children, fontSize = '1em', color = '#3f5ff0', ...rest } = props;
   return (
     <a
       {...rest}
