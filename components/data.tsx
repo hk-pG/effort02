@@ -23,7 +23,7 @@ const data: Data[] = [
             <p>
               このサイトは、努力の跡2022の
               <Link
-                href="https://hk-pg.github.io/gohanRPG/"
+                href="https://gohan-rpg.vercel.app/"
                 target="_blank"
                 rel="noreferrer"
                 fontSize="2em"
